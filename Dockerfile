@@ -8,7 +8,7 @@ RUN install_packages libgl1-mesa-glx locales
 # Uncomment the en_US.UTF-8 line from /etc/locale.gen and regenerate
 RUN sed -i 's/^# *\(en_US.UTF-8\)/\1/' /etc/locale.gen && locale-gen
 
-ENV LC_ALL=en_US.UTF-8
+ENV LC_ALL=en_US.UTF-8 \
     LANG=en_US.UTF-8
 
 CMD ["/bin/bash"]
