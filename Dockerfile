@@ -1,4 +1,4 @@
-FROM bitnami/minideb:jessie
+FROM bitnami/minideb:stretch
 MAINTAINER johanneskoester "johannes.koester@tu-dortmund.de"
 
 # By default en_US.UTF-8 is not generated, and locale-gen is not installed
